@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import UserStore from '../stores/UserStore';
 import UserWelcome from './UserWelcome';
 import UserAvatar from './UserAvatar';
+import SearchBar from './SearchBar';
 import StatusButtons from './StatusButtons';
 
 export default class Navbar extends Component {
@@ -49,6 +50,7 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <UserWelcome profile={profile} />
             <UserAvatar profile={profile} />
+            <SearchBar />
             <StatusButtons profile={profile}/>
           </div>
         </div>

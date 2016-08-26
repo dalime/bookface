@@ -5,11 +5,17 @@ export default class UserAvatar extends Component {
     let { profile } = this.props;
 
     if (!profile) {
-      return <img src="" />
+      return (
+        <div className="nav navbar-nav navbar-right">
+          <img src="" />
+        </div>
+      )
     }
 
     return (
-      <img src={profile.picture} height="30px" />
+      <div className="nav navbar-nav navbar-right">
+        <img src={profile.picture} height="30px" />
+      </div>
     )
   }
 }

@@ -35,7 +35,7 @@ export default class Splash extends Component {
     if (this.state.profiles) {
       const Profiles = this.state.profiles.map(profile => {
         return (
-          <div className="container">
+          <div key={profile._id} className="container">
             <h1>{profile.fname} {profile.lname}</h1>
             <img src={profile.picture} width="100px"/>
             <h3>Email: {profile.email}</h3>

@@ -15,6 +15,7 @@ const userSchema = new mongoose.Schema({
   phone: {type: String, required: true},
   address: {type: String, required: true},
   picture: {type: String, default: 'http://emblemsbattlefield.com/uploads/posts/2014/10/facebook-default-photo-male_1.jpg'}
+  //friends: [{type: mongoose.Schema.types.objectId, ref: 'friends'}]
 })
 
 // use statics to create model method
